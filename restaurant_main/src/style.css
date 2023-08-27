@@ -1,18 +1,32 @@
+body {
+    margin:0px;
+    padding: 0px;
 
+}
 
-.outerContainer{
+#outerContainer{
     display: grid;
-    border: 2px solid red;
+    background: url('./restaurant.jpg');    
+    background-size: cover;
+    grid-template: 
+    'nav nav nav'
+    '. main .'
+    ;    
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 90vh;
 
 }
 
-.navBar {
-
-
+#navBar {
+    grid-area: nav; /* Assign the grid area */
+    background-color: rgb(252, 57, 57);
+    width: 100%;
 }
 
-.mainSec {
-
-
-    
+#mainSec {  
+    grid-area: main;
+    background-color: rgb(255, 228, 228);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
 }
