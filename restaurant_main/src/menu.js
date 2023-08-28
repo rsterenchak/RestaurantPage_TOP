@@ -1,9 +1,11 @@
 import './style.css';
 import Image from './restaurant.jpg';
 
-console.log("Opened Menu page");
 
 export default function menuComponent() {
+
+    console.log("Opened Menu page");
+
     const element = document.createElement('div');
     const element1 = document.createElement('div');
     const text1 = document.createElement('div');

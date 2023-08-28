@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./Rowdies-Light.ttf');
+
+}
+
+
 body {
     margin:0px;
     padding: 0px;
@@ -23,7 +30,7 @@ body {
     background-color: rgb(202, 149, 5);
     width: 100%;
     grid-template: 
-    "."
+    '.'
     "head"
     "."
     ;
@@ -35,13 +42,52 @@ body {
     color: bisque;
     grid-area: head; 
     justify-content: center;
-    align-content: center;      
+    align-content: center;
+    font-family: 'MyFont';
+    font-size: 30px;
+    
 }
 
 #mainSec {  
+    display: grid;
     grid-area: main;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: 
+    "headSec"
+    "bodySec"
+    ;
     background-color: rgba(253, 247, 247, 0.842);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 100%;
+
+    border: 1px solid red;
 }
+
+
+
+#headSec {
+    display: grid;
+    grid-area: headSec;
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    background-color: rgba(255, 233, 206, 0.774);
+   
+}
+
+
+#navHead {
+
+    border: 1px solid green;
+
+}
+
+
+
+#bodySec {
+    display: grid;
+    grid-area: bodySec;
+
+}
+
