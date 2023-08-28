@@ -6,7 +6,7 @@ body {
 
 #outerContainer{
     display: grid;
-    background: url('./restaurant.jpg');    
+    background: url('./restaurant.jpg');
     background-size: cover;
     grid-template: 
     'nav nav nav'
@@ -40,7 +40,7 @@ body {
 
 #mainSec {  
     grid-area: main;
-    background-color: rgba(255, 228, 228, 0.842);
+    background-color: rgba(253, 247, 247, 0.842);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     width: 100%;
