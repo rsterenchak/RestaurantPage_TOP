@@ -20,7 +20,7 @@ body {
 #navBar {
     display: grid;
     grid-area: nav; /* Assign the grid area */
-    background-color: rgb(252, 57, 57);
+    background-color: rgb(202, 149, 5);
     width: 100%;
     grid-template: 
     "."
@@ -31,14 +31,16 @@ body {
 }
 
 #heading {
+    display: grid;
     color: bisque;
-    border: 1px solid blue;
-    grid-area: head;       
+    grid-area: head; 
+    justify-content: center;
+    align-content: center;      
 }
 
 #mainSec {  
     grid-area: main;
-    background-color: rgb(255, 228, 228);
+    background-color: rgba(255, 228, 228, 0.842);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     width: 100%;
