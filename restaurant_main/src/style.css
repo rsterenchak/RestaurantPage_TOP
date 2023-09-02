@@ -81,6 +81,7 @@ body {
 #navHead {
     display: grid;
     grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template: 
     "spacer1 tab1 tab2 tab3 spacer2"
     ;
@@ -116,18 +117,21 @@ body {
 }
 
 #tab1 {
+
     color: bisque;
     background-color: rgb(202, 149, 5);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     grid-area: tab1;
     font-size: 10px;
     z-index: 3;
-    text-align: center;
     border-bottom-left-radius: 5px;
-
-    border: none;
     cursor: pointer;
     user-select: none; /* Prevent text selection */
+    grid-template: 
+    'tabSpacer1"'
+    "home"
+    "tabSpacer1"
+    ;
 }
 
 #tab1:hover {
@@ -136,17 +140,21 @@ body {
 }
 
 #tab2 {
+
     color: bisque;
     background-color: rgb(202, 149, 5);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     grid-area: tab2;
     font-size: 10px;
-    z-index: 2;
-    text-align: center;
-    
+    z-index: 3;
     border: none;
     cursor: pointer;
     user-select: none; /* Prevent text selection */
+    grid-template: 
+    'tabSpacer2'
+    "menu1"
+    "tabSpacer2"
+    ;
 }
 
 #tab2:hover {
@@ -155,18 +163,22 @@ body {
 }
 
 #tab3 {
+
     color: bisque;
     background-color: rgb(202, 149, 5);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     grid-area: tab3;
     font-size: 10px;
-    z-index: 1;
-    text-align: center;
+    z-index: 3;
     border-bottom-right-radius: 5px;
-
     border: none;
     cursor: pointer;
     user-select: none; /* Prevent text selection */
+    grid-template: 
+    'tabSpacer3'
+    "contact"
+    "tabSpacer3"
+    ;
 }
 
 #tab3:hover {
@@ -178,4 +190,53 @@ body {
     grid-area: spacer2;
     justify-self: end;
     width: 100px;
+}
+
+
+#tabText1 {
+    grid-area: home;
+    color: bisque;
+
+    text-align: center;
+    font-family: 'MyFont';
+    font-size: 12px;
+    
+}
+
+#tabText2 {
+    grid-area: menu1;
+    color: bisque;
+
+    text-align: center;
+    font-family: 'MyFont';
+    font-size: 12px;
+    
+}
+
+#tabText3 {
+    grid-area: contact;
+    color: bisque;
+
+    text-align: center;
+    font-family: 'MyFont';
+    font-size: 12px;
+    
+}
+
+#tabSpace {
+    grid-area: tabSpacer1;
+
+    height: 6px;
+}
+
+#tabSpace2 {
+    grid-area: tabSpacer2;
+
+    height: 6px;
+}
+
+#tabSpace3 {
+    grid-area: tabSpacer3;
+
+    height: 6px;
 }

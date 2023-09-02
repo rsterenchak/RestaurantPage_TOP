@@ -15,6 +15,8 @@ export default function component() {
     const sec1 = document.createElement('div');
     const sec2 = document.createElement('div');    
 
+
+
     const secHeader = document.createElement('div');
 
     const text2 = document.createElement('div');
@@ -26,6 +28,19 @@ export default function component() {
     const tab2 = document.createElement('div');
     const tab3 = document.createElement('div');
     const space2 = document.createElement('div');
+
+    const text3 = document.createElement('div');
+    const text4 = document.createElement('div');
+    const text5 = document.createElement('div');
+
+    const tabSpacer1 = document.createElement('div');
+    const tabSpacer2 = document.createElement('div');
+
+    const tabSpacer3 = document.createElement('div');
+    const tabSpacer4 = document.createElement('div');
+
+    const tabSpacer5 = document.createElement('div');
+    const tabSpacer6 = document.createElement('div');
 
 
     element.id ='outerContainer';
@@ -74,10 +89,37 @@ export default function component() {
     navSec.appendChild(space2);
 
     space1.textContent = "";
-    tab1.textContent = "Home";
-    tab2.textContent = "Menu";
-    tab3.textContent = "Contact";
-    space2.textContent = "";
+    
+    tabSpacer1.id = 'tabSpace';
+    tabSpacer2.id = 'tabSpace';
+    
+    tab1.appendChild(tabSpacer2);
+    tab1.appendChild(text3);
+    tab1.appendChild(tabSpacer1);
+
+    text3.textContent = "Home";
+    text3.id = 'tabText1';
+
+    tabSpacer3.id = 'tabSpace2';
+    tabSpacer4.id = 'tabSpace2';
+
+    tab2.appendChild(tabSpacer4);
+    tab2.appendChild(text4);
+    tab2.appendChild(tabSpacer3);
+
+    text4.textContent = "Menu";
+    text4.id = 'tabText2';
+
+
+    tabSpacer5.id = 'tabSpace3';
+    tabSpacer6.id = 'tabSpace3';
+    
+    tab3.appendChild(tabSpacer6);
+    tab3.appendChild(text5);
+    tab3.appendChild(tabSpacer5);
+
+    text5.textContent = "Contact";
+    text5.id = 'tabText3';
 
     
 
